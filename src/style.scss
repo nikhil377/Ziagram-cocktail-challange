@@ -15,7 +15,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: $secondary-font;
-  background-image: url("./images/back.jpg");
+  background-image: url("./images/background-main.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -109,7 +109,7 @@ form {
 }
 .instruction-to-make{
   color: white;
-  background: url("./images/school.png"); 
+  background: url("./images/slate-background.png"); 
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto
@@ -130,7 +130,7 @@ strong{
 @media screen and (max-width: 480px) {
   .instruction-to-make{
     color: white;
-    background: url("./images/school.png"); 
+    background: url("./images/slate-background.png"); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto
