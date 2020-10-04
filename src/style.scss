@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Open+Sans');
+
+$primary-font: 'Anton', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
+$grey-color: grey;
+$green-color: green;
+$light-grey: lightgrey;
+
+* {
+  box-sizing: border-box;
+  font-family: $secondary-font;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $secondary-font;
+  background-image: url("./images/back.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+navbar {
+  background-color: $light-grey;
+}
+
+.cocktail-title.cocktail-title {
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 3rem 1.5rem;
+}
+
+img.random-image {
+  height: 120px;
+}
+
+img.cocktail-show-image {
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px 0 rgba(0,0,0,0.5);
+}
+
+div {
+  .title{
+    color: white;
+    font-size: 40px;
+  }
+
+.navbar-item img {
+  max-height: 3rem;
+}
+
+}
+
+.input {
+  border-color: #fff;
+  outline: none;
+
+    &:focus:hover:active {
+      border-color: #fff;
+      outline: none;
+  }
+}
+
+.card {
+  border: grey solid 2px;
+  border-radius: 10px 10px 10px;
+}
+
+.card:hover {
+  border: green solid 4px;
+  border-radius: 10px 10px 10px;
+}
+
+.card-content > .subtitle {
+  font-size: 12px;
+
+}
+
+.column.headerDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+form {
+  width: 100%;
+  font-style: $secondary-font;
+  font-weight: bolder;
+}
+.search-form{
+  color: white;
+}
+.button.search-button {
+  background-color: $green-color;
+  font-style: $secondary-font;
+  font-weight: bolder;
+  color: #fff;
+  border: 1px white solid;
+  border-radius: 5px 5px 5px;
+
+  &:focus{
+    color: #fff;
+    outline: none;
+    border-color: #fff;
+
+  }
+}
+.instruction-to-make{
+  color: white;
+  background: url("./images/school.png"); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto
+
+}
+strong{
+  color: white !important;
+}
+.is-4{
+  @extend strong
+}
+.is-3{
+  padding-left: 44px;
+}
+.ingredients-col{
+  padding-left: 3rem !important;
+}
+@media screen and (max-width: 480px) {
+  .instruction-to-make{
+    color: white;
+    background: url("./images/school.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto
+  
+  }
+  .is-3{
+    padding-left: 0px 
+  }
+  .ingredients-col{
+    padding-left: .75rem !important;
+  }
+}
+
+
+
+
