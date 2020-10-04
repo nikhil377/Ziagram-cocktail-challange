@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar testcase should render the navbar 1`] = `
+Array [
+  <Context.Consumer>
+    [Function]
+  </Context.Consumer>,
+]
+`;

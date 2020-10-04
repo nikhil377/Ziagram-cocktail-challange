@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage testcase should render the homepage 1`] = `
+Array [
+  <section>
+    <CocktailTitle />
+    <div
+      className="container"
+    >
+      <section
+        className="section search-results"
+      >
+        <form
+          className="search-form"
+          onSubmit={[Function]}
+        >
+          <div
+            className="field"
+          >
+            <div
+              className="control"
+              onChange={[Function]}
+            >
+              <label
+                className="radio"
+              >
+                <input
+                  defaultChecked={true}
+                  name="searchFilter"
+                  type="radio"
+                  value="category"
+                />
+                 category
+              </label>
+              <label
+                className="radio"
+              >
+                <input
+                  name="searchFilter"
+                  type="radio"
+                  value="name"
+                />
+                 name
+              </label>
+              <label
+                className="radio"
+              >
+                <input
+                  name="searchFilter"
+                  type="radio"
+                  value="ingredient"
+                />
+                 ingredient
+              </label>
+            </div>
+          </div>
+          <div
+            className="field has-addons"
+          >
+            <div
+              className="control is-expanded"
+            >
+              <input
+                className="input"
+                id="input"
+                name="searchInput"
+                onChange={[Function]}
+                placeholder="search for ordinary_drink"
+                type="text"
+              />
+            </div>
+            <div
+              className="control"
+            >
+              <button
+                className="button search-button"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section
+        className="section"
+      >
+        <CocktailIndex />
+      </section>
+    </div>
+  </section>,
+]
+`;

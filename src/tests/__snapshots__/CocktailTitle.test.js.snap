@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CocktailTitle should render the title 1`] = `
+Array [
+  <div
+    className="main"
+  >
+    <div
+      className="cocktail-title"
+    >
+      <h1
+        className="title"
+      >
+        Welcome to CocktailDB App
+      </h1>
+    </div>
+  </div>,
+]
+`;
