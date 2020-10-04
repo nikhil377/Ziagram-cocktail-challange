@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './style.scss'
+
+import 'bulma'
+
+import Home from './components/Home'
+import CocktailDetails from './components/CocktailDetails'
+import NavBar from './components/NavBar'
+
+class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {}
+  }
+
+  render() {
+    return (
+      <Router>
+        <NavBar />
+        <div>
+          <Switch>
+            <Route path='/cocktails/:id' component={CocktailDetails} />
+            <Route exact path='/' component={Home} />
+          </Switch>
+        </div>
+      </Router>
+    )
+  }
 }
 
 export default App;
